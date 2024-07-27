@@ -24,7 +24,7 @@ def take_screenshot(driver, url, file_name, sleep):
     time.sleep(sleep)
     driver.save_screenshot(file_name)
     driver.quit()
-    print(f'Captura de tela no site {url} no arquivo {file_name} com sucesso!')
+    print(f'Captura de tela no site {url} no arquivo {file_name} salva com sucesso!')
 
 # site 2
 chrome_options1 = Options()
@@ -40,10 +40,10 @@ def take_screenshot1(driver, url, file_name, sleep):
     time.sleep(sleep)
     driver.save_screenshot(file_name)
     driver.quit()
-    print(f'Captura de tela no site {url} no arquivo {file_name} com sucesso!')
+    print(f'Captura de tela no site {url} no arquivo {file_name} salva com sucesso!')
 
 def multi_paginas_screen():
-    take_screenshot(driver=driver, url='https://visao-geral-picking-putaway-brsc02.streamlit.app/', file_name='picking-putaway.png', sleep=20)
+    take_screenshot(driver=driver, url='https://visao-geral-picking-putaway-brsc02.streamlit.app/', file_name='picking-putaway.png', sleep=30)
     take_screenshot1(driver=driver1, url='https://gestao-brsc02.streamlit.app/gerencial', file_name='gerencial.png', sleep=20)
 
 def enviar_email():
