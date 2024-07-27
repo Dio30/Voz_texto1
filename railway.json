@@ -3,9 +3,8 @@
         "command": "pip install -r requirements.txt"
     },
     "deploy": {
-        "command": {
-            "start": "python3 -m bot.py"
+        "start": {
+            "command": "python3 -m bot.py"
         }
     }
-
   }
