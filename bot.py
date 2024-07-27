@@ -13,10 +13,9 @@ fuso_horario = datetime.now()
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Executar em modo headless
 chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument("--window-size=1500x3200")
 
-service = Service()
+service = Service(ChromeDriverManager().install())
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
@@ -30,11 +29,10 @@ def take_screenshot(driver, url, file_name, sleep):
 # site 2
 chrome_options1 = Options()
 chrome_options1.add_argument("--headless")  # Executar em modo headless
-chrome_options1.add_argument('--disable-dev-shm-usage')
 chrome_options1.add_argument("--no-sandbox")
 chrome_options1.add_argument("--window-size=1500x3300")
 
-service1 = Service()
+service1 = Service(ChromeDriverManager().install())
 driver1 = webdriver.Chrome(service=service1, options=chrome_options1)
 
 def take_screenshot1(driver, url, file_name, sleep):
