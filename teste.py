@@ -9,7 +9,7 @@ texto = st.text_input("Digite o texto que você deseja converter para áudio:", 
 
 if texto:
     # Converter texto em áudio usando gTTS
-    tts = gTTS(text=texto, lang='pt')
+    tts = gTTS(text=texto, lang='pt-br')
     
     # Criar um arquivo temporário para armazenar o áudio
     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".wav")
