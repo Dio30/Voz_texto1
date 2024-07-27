@@ -16,7 +16,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument("--window-size=1500x3200")
 
-service = Service(ChromeDriverManager().install())
+service = Service()
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
@@ -34,7 +34,7 @@ chrome_options1.add_argument('--disable-dev-shm-usage')
 chrome_options1.add_argument("--no-sandbox")
 chrome_options1.add_argument("--window-size=1500x3300")
 
-service1 = Service(ChromeDriverManager().install())
+service1 = Service()
 driver1 = webdriver.Chrome(service=service1, options=chrome_options1)
 
 def take_screenshot1(driver, url, file_name, sleep):
