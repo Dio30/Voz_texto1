@@ -3,11 +3,8 @@
         "command": "pip install -r requirements.txt"
     },
     "deploy": {
-        "start": "python3 -m bot.py",
+        "command": "python3 -m bot.py",
          "path": "./"
-    },
-    "env": {
-      "PYTHON_VERSION": "3.12",
-      "ENVIRONMENT": "production"
     }
+
   }
