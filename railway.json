@@ -1,15 +1,11 @@
 {
     "build": {
-      "command": "pip install -r requirements.txt",
-      "path": "./"
-    },
-    "start": {
-      "command": "python bot.py",
-      "path": "./"
+        "command": "pip install -r requirements.txt",
+        "path": "./"
     },
     "deploy": {
-      "command": "python bot.py",
-      "path": "./"
+        "start": "python bot.py",
+        "path": "./"
     },
     "env": {
       "PYTHON_VERSION": "3.12",
