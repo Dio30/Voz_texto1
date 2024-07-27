@@ -4,7 +4,7 @@
         "path": "./"
     },
     "deploy": {
-        "start": "python bot.py",
+        "start": "python -m bot.py",
         "path": "./"
     },
     "env": {
