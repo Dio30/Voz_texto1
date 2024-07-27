@@ -1,6 +1,5 @@
 [build]
 builder = "nixpacks"
-buildCommand = "apt install -y chromium-chromedriver && apt-get update"
 
 [deploy]
 startCommand = "python3 -m bot.py"
