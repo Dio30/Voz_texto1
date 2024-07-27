@@ -1,10 +1,11 @@
 {
+    "$schema": "https://railway.app/railway.schema.json",
     "build": {
-        "command": "pip install -r requirements.txt"
-    },
+      "buildCommand": "pip install -r requirements.txt"
+      },
     "deploy": {
-        "start": {
-            "command": "python3 -m bot.py"
-        }
-    }
+      "startCommand": "python3 -m bot.py",
+      "healthcheckPath": "/",
+      "healthcheckTimeout": 100
+      }
   }
