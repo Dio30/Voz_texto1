@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.os_manager import ChromeType
 import time
 import smtplib
 from datetime import datetime
@@ -16,7 +15,7 @@ chrome_options.add_argument("--headless")  # Executar em modo headless
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--window-size=1500x3200")
 
-service = Service(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
+service = Service(ChromeDriverManager().install())
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
